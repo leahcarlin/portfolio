@@ -1,13 +1,42 @@
-body {
+/* Default dark mode styles */
+:root {
+  --background-color: #121212;
+  --text-color: #ffffff;
+  --link-color: #bb86fc;
+}
+body,
+.App {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+h1,
+h2,
+h3,
+body {
+  text-align: left;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+a {
+  color: var(--link-color);
+}
+
+/* Light mode styles (if user prefers light mode) */
+@media (prefers-color-scheme: light) {
+  :root {
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --link-color: #6200ea;
+  }
 }
