@@ -33,7 +33,7 @@ const Home: React.FC = () => {
   }, []);
 
   return (
-    <div className="home container">
+    <div className="home container" id="home">
       <div className="intro" ref={introRef}>
         <h1>Hi,👋</h1>
         <h1>my name is</h1>

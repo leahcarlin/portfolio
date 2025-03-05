@@ -14,7 +14,7 @@ const About: React.FC = () => {
   }, []);
 
   return (
-    <div className="about container">
+    <div className="about container" id="about">
       <div>
         <h1 data-aos="fade-up" data-aos-once="true">
           About Me

@@ -14,7 +14,7 @@ const Projects: React.FC = () => {
   }, []);
 
   return (
-    <div className="projects container">
+    <div className="projects container" id="projects">
       <h1 data-aos="fade-up" data-aos-once="true">
         Projects
       </h1>

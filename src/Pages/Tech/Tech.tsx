@@ -13,7 +13,7 @@ const Tech: React.FC = () => {
   }, []);
 
   return (
-    <div className="tech container">
+    <div className="tech container" id="tech">
       <h1 data-aos="fade-up" data-aos-once="true">
         Technologies
       </h1>
