@@ -26,6 +26,15 @@ export interface IExperience {
   duration: string;
 }
 
+export interface IProjectCard {
+  title: string;
+  image: string;
+  description: string;
+  techstack: string;
+  previewLink: string;
+  githubLink: string;
+}
+
 export const socialMediaUrl = {
   linkdein: "https://www.linkedin.com/",
   github: "https://www.github.com/",
@@ -106,7 +115,7 @@ export const techStackDetails = [
   { url: vue, title: "Vue3" },
 ];
 
-export const projectDetails = [
+export const projectDetails: IProjectCard[] = [
   {
     title: "Photo Mosaic Generator",
     image: mosaic,

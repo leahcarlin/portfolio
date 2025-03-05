@@ -1,0 +1,64 @@
+.project-card {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  height: auto;
+  gap: 10px;
+  border-radius: 15px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.5s ease;
+
+  &:hover {
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+  }
+
+  .card-info {
+    margin: 10px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    span {
+      font-weight: bold;
+    }
+  }
+}
+.image {
+  max-height: 260px;
+  overflow: hidden;
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
+
+.links,
+a {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.links {
+  justify-content: space-between;
+  margin: 10px 0;
+
+  svg path {
+    fill: black;
+    opacity: 0.75;
+  }
+
+  a {
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.5;
+      svg path:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+}

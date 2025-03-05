@@ -69,3 +69,7 @@ a {
     --link-color: #6200ea;
   }
 }
+
+a {
+  all: unset;
+}
