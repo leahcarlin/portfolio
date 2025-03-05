@@ -1,0 +1,23 @@
+.experience {
+  text-align: left;
+  flex-direction: column;
+  gap: 20px;
+  margin: 30px;
+}
+.details,
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.info p {
+  display: flex;
+  align-items: center;
+}
+.company {
+  display: flex;
+  gap: 5px;
+  min-width: 360px;
+}

@@ -1,0 +1,25 @@
+.tech {
+  flex-direction: column;
+  gap: 40px;
+}
+.tags {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+  }
+
+  &:hover {
+    transform: scale(1.05) rotate(-1deg);
+  }
+}

@@ -7,9 +7,6 @@
 body,
 .App {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--background-color);
@@ -19,8 +16,36 @@ body,
 h1,
 h2,
 h3,
-body {
+h4,
+body,
+p {
   text-align: left;
+  font-family: "Sen", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 300;
+  margin: 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1rem;
 }
 
 code {
@@ -30,6 +55,10 @@ code {
 
 a {
   color: var(--link-color);
+}
+
+.container {
+  display: flex;
 }
 
 /* Light mode styles (if user prefers light mode) */
