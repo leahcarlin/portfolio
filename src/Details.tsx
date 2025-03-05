@@ -128,7 +128,7 @@ export const projectDetails: IProjectCard[] = [
   {
     title: "Disney Quiz",
     image: disney,
-    description: `Built in React to demonstrate my frontend capabilities, utilizing DisneyAPI, state management and GSAP animations`,
+    description: `Built in React to demonstrate my frontend capabilities, utilizing DisneyAPI, state management and GSAP animations, along with consistent UX/UI`,
     techstack: "HTML/CSS, JavaScript, React, GSAP",
     previewLink: "https://leahcarlin.github.io/react-disney-quiz/",
     githubLink: "https://github.com/leahcarlin/react-disney-quiz",
