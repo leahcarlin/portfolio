@@ -37,11 +37,11 @@ const Home: React.FC = () => {
       <div className="intro" ref={introRef}>
         <h1>Hi,👋</h1>
         <h1>my name is</h1>
-        <h1 className="name">Leah Carlin</h1>
+        <h1>Leah Carlin</h1>
         <h2>I create cool things for web</h2>
       </div>
-      <div className="image-container" ref={photoRef}>
-        <img src={Photo} alt="Leah Carlin" />
+      <div>
+        <img ref={photoRef} src={Photo} alt="Leah Carlin" />
       </div>
     </div>
   );
