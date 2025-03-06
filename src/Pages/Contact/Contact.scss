@@ -18,20 +18,24 @@
 a {
   cursor: pointer;
 }
-svg:hover {
-  g path:first-child {
-    fill: $medium-dark-green;
+.contact {
+  svg path:not(:first-child) {
+    fill: white;
   }
-}
-@media (prefers-color-scheme: dark) {
-  svg g path {
-    &:first-child {
-      fill: $medium-green;
-      &:hover {
-        g path:first-child {
-          fill: $light-green;
-        }
-      }
+  svg path:first-child {
+    fill: black;
+  }
+  svg:hover {
+    g path:first-child {
+      fill: $medium-dark-green;
+    }
+  }
+  @media (prefers-color-scheme: dark) {
+    svg path:not(:first-child) {
+      fill: black;
+    }
+    svg path:first-child {
+      fill: white;
     }
   }
 }

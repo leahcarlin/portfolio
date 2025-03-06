@@ -51,6 +51,11 @@ a {
   svg path {
     fill: black;
   }
+  @media (prefers-color-scheme: dark) {
+    svg path {
+      fill: white;
+    }
+  }
 
   a {
     cursor: pointer;
