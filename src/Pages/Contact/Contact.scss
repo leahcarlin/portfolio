@@ -23,3 +23,15 @@ svg:hover {
     fill: $medium-dark-green;
   }
 }
+@media (prefers-color-scheme: dark) {
+  svg g path {
+    &:first-child {
+      fill: $medium-green;
+      &:hover {
+        g path:first-child {
+          fill: $light-green;
+        }
+      }
+    }
+  }
+}
