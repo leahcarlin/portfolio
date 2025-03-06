@@ -1,18 +1,9 @@
-import React, { useEffect } from "react";
-import AOS from "aos";
+import React from "react";
 import ProjectCard from "../../Components/ProjectCard/ProjectCard";
 import { projectDetails } from "../../Details";
 import "./Projects.scss";
 
 const Projects: React.FC = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      once: true,
-      mirror: false,
-    });
-  }, []);
-
   return (
     <div className="projects container" id="projects">
       <h1 data-aos="fade-up" data-aos-once="true">

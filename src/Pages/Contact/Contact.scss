@@ -1,0 +1,25 @@
+@import "../../variables";
+
+.contact,
+.contact-info {
+  flex-direction: column;
+}
+.contact-info,
+.media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.contact {
+  margin-bottom: 100px;
+}
+
+a {
+  cursor: pointer;
+}
+svg:hover {
+  g path:first-child {
+    fill: $medium-dark-green;
+  }
+}

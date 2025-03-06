@@ -1,6 +1,39 @@
+@import "../../variables";
+
 .about {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   gap: 40px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  overflow: visible;
+}
+
+button {
+  align-items: center;
+  background-color: $light-green;
+  border: 2px solid $dark-green;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #111;
+  cursor: pointer;
+  display: flex;
+  font-size: 16px;
+  height: 48px;
+  justify-content: center;
+  line-height: 24px;
+  max-width: 100%;
+  padding: 0 25px;
+  margin-right: 10px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  overflow: visible;
+  box-shadow: #422800 4px 4px 0 0;
 }

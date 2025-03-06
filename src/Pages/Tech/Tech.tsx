@@ -1,17 +1,8 @@
-import React, { useEffect } from "react";
-import AOS from "aos";
+import React from "react";
 import { techStackDetails } from "../../Details";
 import "./Tech.scss";
 
 const Tech: React.FC = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      once: true,
-      mirror: false,
-    });
-  }, []);
-
   return (
     <div className="tech container" id="tech">
       <h1 data-aos="fade-up" data-aos-once="true">
