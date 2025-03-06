@@ -18,7 +18,8 @@ h2,
 h3,
 h4,
 body,
-p {
+p,
+button {
   text-align: left;
   font-family: "Sen", sans-serif;
   font-optical-sizing: auto;

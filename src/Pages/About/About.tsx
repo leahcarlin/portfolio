@@ -13,6 +13,13 @@ const About: React.FC = () => {
     });
   }, []);
 
+  const downloadResume = () => {
+    const link = document.createElement("a");
+    link.href = "assets/LeahCarlin_Resume_FS.pdf";
+    link.download = "LeahCarlin_Resume.pdf";
+    link.click();
+  };
+
   return (
     <div className="about container" id="about">
       <div>
@@ -21,15 +28,17 @@ const About: React.FC = () => {
         </h1>
         <h3 data-aos="fade-up" data-aos-once="true">
           I'm a results-driven Full Stack Developer with global experience and a
-          passion for crafting high-quality, user-centric intefaces that enhance
-          digital experiences.
+          passion for crafting high-quality, user-centric interfaces that
+          enhance digital experiences.
         </h3>
       </div>
       <div className="work">
-        <button>Download resume</button>
-        <h1 data-aos="fade-up" data-aos-once="true">
-          Professional Experience
-        </h1>
+        <div className="header" data-aos="fade-up" data-aos-once="true">
+          <h1>Professional Experience</h1>
+          <button onClick={downloadResume} id="download-resume">
+            Download resume
+          </button>
+        </div>
         {workDetails
           ? workDetails.map((work, index) => (
               <div data-aos="fade-up" data-aos-once="true" key={index}>
