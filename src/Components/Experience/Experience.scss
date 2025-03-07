@@ -47,12 +47,15 @@
     .details,
     .info {
       flex-direction: column;
-      justify-content: flex-start;
     }
     .details {
-      gap: 10px;
-      justify-content: flex-start;
-      flex-wrap: wrap;
+      gap: 0;
+    }
+    .info {
+      gap: 0;
+      p {
+        justify-content: center;
+      }
     }
   }
 }

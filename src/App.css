@@ -47,3 +47,10 @@ footer {
   font-size: 12px;
   margin: 40px 0;
 }
+
+/* MOBILE */
+@media (max-width: 480px) {
+  .App {
+    margin: 0 40px;
+  }
+}
