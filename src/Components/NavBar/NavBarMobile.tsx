@@ -6,17 +6,16 @@ const NavBarMobile: React.FC = () => {
 
   return (
     <div className="nav-mobile container">
-      {!menuOpen ? (
-        <div
-          className={`hamburger ${menuOpen ? "open" : ""}`}
-          onClick={() => setMenuOpen(!menuOpen)}
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      ) : (
-        <ul className="nav-links">
+      <div
+        className={`hamburger ${menuOpen && "open"}`}
+        onClick={() => setMenuOpen(!menuOpen)}
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      {menuOpen && (
+        <ul className={`nav-links ${menuOpen && "open"}`}>
           <li>
             <a href="#home" onClick={() => setMenuOpen(false)}>
               Home
