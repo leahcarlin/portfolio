@@ -7,3 +7,9 @@
   justify-content: center;
   gap: 50px;
 }
+
+@media (max-width: 480px) {
+  .cards {
+    flex-direction: column;
+  }
+}
