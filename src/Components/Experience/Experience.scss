@@ -26,3 +26,33 @@
   gap: 5px;
   min-width: 360px;
 }
+
+.experience svg path {
+  fill: black;
+}
+@media (prefers-color-scheme: dark) {
+  .experience svg path {
+    fill: white;
+  }
+}
+/* MOBILE */
+@media (max-width: 480px) {
+  .experience.container {
+    gap: 10px;
+    margin: 10px 0;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    .details,
+    .info {
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+    .details {
+      gap: 10px;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+    }
+  }
+}
