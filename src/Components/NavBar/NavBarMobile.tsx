@@ -17,24 +17,16 @@ const NavBarMobile: React.FC = () => {
       {menuOpen && (
         <ul className={`nav-links ${menuOpen && "open"}`}>
           <li>
-            <a href="#home" onClick={() => setMenuOpen(false)}>
-              Home
-            </a>
+            <a href="#home">Home</a>
           </li>
           <li>
-            <a href="#about" onClick={() => setMenuOpen(false)}>
-              About
-            </a>
+            <a href="#about">About</a>
           </li>
           <li>
-            <a href="#projects" onClick={() => setMenuOpen(false)}>
-              Projects
-            </a>
+            <a href="#projects">Projects</a>
           </li>
           <li>
-            <a href="#contact" onClick={() => setMenuOpen(false)}>
-              Contact
-            </a>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
       )}
