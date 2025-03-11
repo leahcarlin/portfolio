@@ -29,10 +29,13 @@ function App() {
       <Projects />
       <Contact />
       <footer>
-        developed by Leah Carlin | design inspo from
-        <a href="https://github.com/pavanmg007/react-developer-portfolio-template">
-          pavanmg007
-        </a>
+        <p>developed by Leah Carlin</p>
+        <p>
+          design inspo from
+          <a href="https://github.com/pavanmg007/react-developer-portfolio-template">
+            pavanmg007
+          </a>
+        </p>
       </footer>
     </div>
   );

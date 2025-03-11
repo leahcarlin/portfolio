@@ -44,13 +44,26 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   font-size: 12px;
   margin: 40px 0;
+}
+footer p:first-child {
+  margin-right: 40px;
+}
+footer p:last-child {
+  display: flex;
 }
 
 /* MOBILE */
 @media (max-width: 480px) {
   .App {
     margin: 0 40px;
+  }
+  footer {
+    flex-direction: column;
+  }
+  footer p:first-child {
+    margin-right: 0;
   }
 }

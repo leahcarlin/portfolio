@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { debounce } from "lodash";
 import LogoLight from "../../assets/logo_light.png";
 import LogoDark from "../../assets/logo_dark.png";
 import NavBarMobile from "./NavBarMobile";
@@ -8,16 +9,20 @@ const NavBar: React.FC = () => {
   const isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
-  const handleResize = () => setScreenWidth(window.innerWidth);
+  useEffect(() => {
+    console.log("Screen width updated:", screenWidth);
+  }, [screenWidth]);
 
   useEffect(() => {
-    // set initial value on mount
-    handleResize();
+    const handleResize = debounce(() => {
+      setScreenWidth(window.innerWidth);
+    }, 200);
 
     window.addEventListener("resize", handleResize);
 
-    // cleanup on unmount
-    return () => window.removeEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
   }, []);
 
   return (
