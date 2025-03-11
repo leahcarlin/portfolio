@@ -6,30 +6,48 @@ const NavBarMobile: React.FC = () => {
 
   return (
     <div className="nav-mobile container">
-      <div
-        className={`hamburger ${menuOpen && "open"}`}
-        onClick={() => setMenuOpen(!menuOpen)}
-      >
-        <span></span>
-        <span></span>
-        <span></span>
+      <div className="links-container">
+        <div
+          className={`hamburger ${menuOpen && "open"}`}
+          onClick={() => {
+            console.log("Hamburger clicked!");
+            setMenuOpen(!menuOpen);
+          }}
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div className={`nav-overlay ${menuOpen ? "open" : ""}`}>
+          <ul className="nav-links">
+            <li>
+              <a href="#home" onClick={() => setMenuOpen(false)}>
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="#about" onClick={() => setMenuOpen(false)}>
+                About
+              </a>
+            </li>
+            <li>
+              <a href="#tech" onClick={() => setMenuOpen(false)}>
+                Tech
+              </a>
+            </li>
+            <li>
+              <a href="#projects" onClick={() => setMenuOpen(false)}>
+                Projects
+              </a>
+            </li>
+            <li>
+              <a href="#contact" onClick={() => setMenuOpen(false)}>
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-      {menuOpen && (
-        <ul className={`nav-links ${menuOpen && "open"}`}>
-          <li>
-            <a href="#home">Home</a>
-          </li>
-          <li>
-            <a href="#about">About</a>
-          </li>
-          <li>
-            <a href="#projects">Projects</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
-        </ul>
-      )}
     </div>
   );
 };

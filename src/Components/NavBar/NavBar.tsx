@@ -20,15 +20,6 @@ const NavBar: React.FC = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const navigatePage = (page: string) => {
-    console.log("click");
-    const element = document.getElementById(`#${page}`);
-    console.log(element);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
-  };
-
   return (
     <nav>
       {isDarkMode ? (
