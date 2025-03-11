@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.f68839bb.css",
+    "main.css": "/portfolio/static/css/main.2c3ec3c9.css",
     "main.js": "/portfolio/static/js/main.2eff2055.js",
     "static/js/453.fed131c7.chunk.js": "/portfolio/static/js/453.fed131c7.chunk.js",
     "static/media/disney.jpg": "/portfolio/static/media/disney.70f7b59882c0fae3b082.jpg",
@@ -33,12 +33,12 @@
     "static/media/html5.svg": "/portfolio/static/media/html5.8664168d5bc90b1a24396f85aadbf623.svg",
     "static/media/figma.svg": "/portfolio/static/media/figma.2c2c9d7ff067a3272fbcb7e4700d15a6.svg",
     "static/media/vuejs.svg": "/portfolio/static/media/vuejs.7bc2f1c7a3dc84d2fcb4aec82ba6363c.svg",
-    "main.f68839bb.css.map": "/portfolio/static/css/main.f68839bb.css.map",
+    "main.2c3ec3c9.css.map": "/portfolio/static/css/main.2c3ec3c9.css.map",
     "main.2eff2055.js.map": "/portfolio/static/js/main.2eff2055.js.map",
     "453.fed131c7.chunk.js.map": "/portfolio/static/js/453.fed131c7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f68839bb.css",
+    "static/css/main.2c3ec3c9.css",
     "static/js/main.2eff2055.js"
   ]
 }
