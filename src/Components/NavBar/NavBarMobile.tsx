@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import clsx from "clsx";
 import "./NavBar.scss";
 
 const NavBarMobile: React.FC = () => {
@@ -8,7 +9,7 @@ const NavBarMobile: React.FC = () => {
     <div className="nav-mobile container">
       <div className="links-container">
         <div
-          className={`hamburger ${menuOpen && "open"}`}
+          className={clsx("hamburger", { open: menuOpen })}
           onClick={() => {
             console.log("Hamburger clicked!");
             setMenuOpen(!menuOpen);
@@ -18,7 +19,7 @@ const NavBarMobile: React.FC = () => {
           <span></span>
           <span></span>
         </div>
-        <div className={`nav-overlay ${menuOpen ? "open" : ""}`}>
+        <div className={clsx("nav-overlay", { open: menuOpen })}>
           <ul className="nav-links">
             <li>
               <a href="#home" onClick={() => setMenuOpen(false)}>

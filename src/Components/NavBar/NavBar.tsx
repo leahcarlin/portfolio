@@ -27,11 +27,13 @@ const NavBar: React.FC = () => {
 
   return (
     <nav>
-      {isDarkMode ? (
-        <img src={LogoDark} alt="dark" />
-      ) : (
-        <img src={LogoLight} alt="light" />
-      )}
+      <a href="#home">
+        {isDarkMode ? (
+          <img src={LogoDark} alt="dark" />
+        ) : (
+          <img src={LogoLight} alt="light" />
+        )}
+      </a>
       {screenWidth < 480 ? (
         <NavBarMobile />
       ) : (

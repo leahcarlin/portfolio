@@ -12,6 +12,7 @@ nav {
   position: sticky;
   top: 0;
   z-index: 10;
+  max-height: 80px;
 }
 
 img {
@@ -79,6 +80,7 @@ img {
     align-items: center;
     gap: 20px;
     margin: 40px 0 0 0;
+    padding: 0;
 
     a {
       color: white;
@@ -92,15 +94,14 @@ img {
       }
     }
   }
-
-  @media (prefers-color-scheme: light) {
-    .nav-links,
-    .hamburger,
-    .nav-links li a {
-      color: black;
-    }
-    .hamburger span {
-      background: black;
-    }
+}
+@media (prefers-color-scheme: light) {
+  .nav-links,
+  .hamburger,
+  .nav-overlay .nav-links li a {
+    color: black;
+  }
+  .hamburger span {
+    background: black;
   }
 }

@@ -4,6 +4,10 @@
   --text-color: #ffffff;
   --link-color: #bb86fc;
 }
+html {
+  scroll-padding-top: 80px; /* Adjust for fixed nav bar */
+}
+
 body,
 .App,
 nav {
